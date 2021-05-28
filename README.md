@@ -43,6 +43,16 @@ e.g : git remote add origin
 
 git pull origin master
 
+若遇到冲突并提示“请在合并前提交或贮藏您的修改“
+
+git stash 贮藏修改
+
+git pull origin main 重新拉取
+
+git stash pop 自动合并，如有冲突，需手动解决
+
+合并完成后，git stash drop 删除贮藏内容
+
 **5.添加提交信息**
 
 git commit -m “first commit”
@@ -114,7 +124,7 @@ git reset \<日志编码\>
 e.g: git reset 1d38bd32482ea1ec2ceb63c5731351013648f5f8
 
 **注：在上传同步代码时，请删除不必要的编译中间文件，例如使用VS时，项目文件夹中产生的
-.vs 文件夹（删除该文件夹可能导致项目工程属性内容丢失！！！）**
+.vs 文件夹（删除该文件夹可能导致项目工程属性内容丢失）**
 
 **13. master分支切main分支（github更新默认分支名为main的处理）**
 
@@ -162,16 +172,14 @@ git push origin main
 ### 使用
 
 1.  执行 git lfs install 开启lfs功能
-
 2.  使用 git lfs track 命令进行大文件追踪 例如git lfs track "\*.png"
     追踪所有后缀为png的文件
-
 3.  使用 git lfs track 查看现有的文件追踪模式
-
 4.  提交代码需要将gitattributes文件提交至仓库. 它保存了文件的追踪记录
-
 5.  提交后运行git lfs ls-files 可以显示当前跟踪的文件列表
-
 6.  将代码 push 到远程仓库后，LFS 跟踪的文件会以『Git LFS』的形式显示:
-
 7.  clone 时 使用'git clone' 或 git lfs clone均可
+
+**15. 其他命令**
+
+![table](C:\Users\cheng\Desktop\Github_Helper\table.jpg)
