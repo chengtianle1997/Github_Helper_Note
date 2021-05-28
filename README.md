@@ -182,4 +182,4 @@ git push origin main
 
 **15. 其他命令**
 
-![table](C:\Users\cheng\Desktop\Github_Helper\table.jpg)
+![table](table.jpg)
